@@ -167,6 +167,7 @@ lst_model_weight = [1.0, 1.0, 1.0] # best
 num_of_models = sum(lst_model_weight)
     
 ensemble_result_dir = os.path.join(args.result_dir, 'single')
+os.makedirs(ensemble_result_dir, exist_ok=True)
 
 pred_classnames = ['non-ideator','suicidal ideator']
 
