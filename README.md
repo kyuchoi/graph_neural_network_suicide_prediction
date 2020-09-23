@@ -11,7 +11,7 @@ The _'MindWatchNet'_ is a two-staged model: first network is for MaDE prediction
 #### Make MaDE pseudolabels for acute suicidal ideation (<2wks) prediction
 Run this code when you want to make MaDE pseudolabels that is used as feature of data for acute suicidal ideation (<2wks) prediction
 ```
-$  cd YAD_survey/MaDE_prediction/code
+$  cd /MaDE_prediction/code
 $  bash survey_MaDE.sh
 ```
 Put single case data as csv file in the following path: be sure to have the same file name (single_case_original.csv)
@@ -31,7 +31,7 @@ Basically, this task is a binary classification with suicidal ideator as positiv
 
 - **U1, U2, SMOTE models** indicates different models using undersampling of majority class with a ratio of 10, and 5 times to minority class, and oversampling of minority class, respectively.
 ```
-$  cd YAD_survey/ideation_prediction/code
+$  cd /ideation_prediction/code
 $  bash survey_idea.sh --mode single # if you do a single case prediction
 $  bash survey_idea.sh --mode group # if you do a group prediction for the test set
 ```
