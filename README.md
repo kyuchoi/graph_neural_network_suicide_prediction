@@ -11,7 +11,7 @@ The _'MindWatchNet'_ is a two-staged model: first network is for MaDE prediction
 #### Make MaDE pseudolabels for acute suicidal ideation (<2wks) prediction
 Run this code when you want to make MaDE pseudolabels that is used as feature of data for acute suicidal ideation (<2wks) prediction
 ```
-$  cd YAD_surve/MaDE_prediction/code
+$  cd YAD_survey/MaDE_prediction/code
 $  bash survey_MaDE.sh
 ```
 Put single case data as csv file in the following path: be sure to have the same file name (single_case_original.csv)
