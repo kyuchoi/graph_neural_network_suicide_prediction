@@ -43,6 +43,15 @@ YAD_survey/ideation_prediction/raw_data/data_for_smote/single_case_MaDE_pseudo.c
 - **Items for data** are as follows: gender, site (screening=0, hospital=1, university counselling=2), 9 items in PHQ9, 7 items in GAD7, total scores of RAS, total scores of RSES, MaDE pseudolabel, suicidal attempt, true suicidal_idea_within_2wk label, and subject ID (any integer number). 
 Please refer to ```YAD_survey/ideation_prediction/raw_data/data_for_smote/single_case_MaDE_pseudo.csv```.
 
+
+## Requirements
+Python3 with following packages:
+```
+pytorch
+dgl 
+rstudio
+```
+
 ## Directories Structure
 ```
 ├─ideation_prediction
