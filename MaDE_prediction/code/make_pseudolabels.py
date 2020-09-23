@@ -267,7 +267,7 @@ else:
         
         for idx, key_no in enumerate(dict_lst_label[center]):
             MaDE_label = dict_lst_pred_class[center][idx]
-            print(f'{idx}/{len(dict_lst_label[center])}th label of {center} of No. {key_no}: {MaDE_label}')
+            print(f'{idx+1}/{len(dict_lst_label[center])}th label of {center} of No. {key_no}: {MaDE_label}')
             pd_idea2wks.loc[pd_idea2wks['No'] == key_no, 'MaDE'] = MaDE_label # No
         MaDE_pseudo_path = os.path.join(result_dir, f'single_case_MaDE_pseudo.csv')
         pd_idea2wks.to_csv(MaDE_pseudo_path, index=False)
