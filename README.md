@@ -52,7 +52,7 @@ cudatoolkit == 10.2
 dgl-cu102
 rstudio
 ```
-MUST install dgl via: pip install dgl-cu102==0.4.3.post2
+MUST install dgl via: pip install dgl-cu102==0.4.3.post2.
 Please download requirements.txt or environ_torch_dgl_r.yml.
 
 ## Directories Structure
