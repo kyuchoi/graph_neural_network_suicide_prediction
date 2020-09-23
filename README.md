@@ -22,6 +22,10 @@ YAD_survey/MaDE_prediction/raw_data/raws_for_MaDE_pseudo/single_case_original.cs
 - **Items for data for MaDE prediction** are 36 items as follows: 9 items in PHQ9, 7 items in GAD7, 20 items in STAI-X1. 
 Please refer to ```YAD_survey/MaDE_prediction/raw_data/raws_for_MaDE_pseudo/single_case_original.csv```.
 
+## Saliency result of representative case
+![Result](./ideation_prediction/result_thr6/single/average maps/Average question saliency for single case of suicidal_idea_within_2wk.png
+)
+
 ## Acute suicidal ideation (<2wks) prediction
 
 #### Make acute suicidal ideation (<2wks) prediction using MaDE pseudolabels generated above
