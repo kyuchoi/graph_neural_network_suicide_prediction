@@ -54,7 +54,7 @@ rstudio
 ```
 MUST install dgl via: ```pip install dgl-cu102==0.4.3.post2```
 
-Please download requirements.txt or environ_torch_dgl_r.yml.
+Please use ```requirements.txt``` or ```environ_torch_dgl_r.yml``` for making Anaconda virtual environment.
 
 ## Directories Structure
 ```
