@@ -1,40 +1,24 @@
 # YAD_survey
 Official repository for project YAD survey
 
-# EGD
-endoscopy segmentation and depth prediction
+## MaDE prediction
 
-## Train
-
-#### Training segmentation
-Run this code when you want to train the segmentation model that is used as feature extraction model when classifying
+#### Make MaDE pseudolabels for acute suicidal ideation (<2wks) prediction
+Run this code when you want to make MaDE pseudolabels that is used as feature of data for acute suicidal ideation (<2wks) prediction
 ```
-$  python train_seg.py
+$  cd YAD_surve/MaDE_prediction/code
+$  bash survey_MaDE.sh
 ```
-
-#### Training 3-way classifier
-Run this code to train 3-way classifier which stratifies AGC, EGC(T1a/b into single category), and BGU
+Put single case data as csv file in the following path: be sure to have the same file name (single_case_original.csv)
 ```
-$  python train_classify_merge.py
+YAD_survey/MaDE_prediction/raw_data/raws_for_MaDE_pseudo/single_case_original.csv
 ```
 
-#### Training EGC T1a / EGC T1b classifier
-Run this code to train binary classifier which stratifies EGC into T1a phase and T1b phase
-```
-$  python train_classify_T1ab_binary.py
-```
+- **Items for data for MaDE prediction** are 36 items as follows: 9 items in PHQ9, 7 items in GAD7, 20 items in STAI-X1. 
+Please refer to ```YAD_survey/MaDE_prediction/raw_data/raws_for_MaDE_pseudo/single_case_original.csv```.
 
-- **Hyperparameters** such as batch size can be modified directly in the python script directly with ```settings```
-python dictionary.
-
-## Tensorboard
-```
-$  tensorboard --logdir=logs
-```
-Running this command will activate tensorboard and you will be able to see all the logged information.
-
-Upon running the command, go to [http://localhost:6006](http://localhost:6006)
-
+- **Items for data** are as follows: gender, site (screening=0, hospital=1, university counselling=2), 9 items in PHQ9, 7 items in GAD7, total scores of RAS, total scores of RSES, MaDE pseudolabel, suicidal attempt, true suicidal_idea_within_2wk label, and subject ID (any integer number). 
+Please refer to ```YAD_survey/ideation_prediction/raw_data/data_for_smote/single_case_MaDE_pseudo.csv```.
 
 ## Directories Structure
 ```
