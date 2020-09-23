@@ -45,12 +45,13 @@ Please refer to ```YAD_survey/ideation_prediction/raw_data/data_for_smote/single
 
 
 ## Requirements
-Python3 with following packages:
+Python3 (Anaconda) with following packages:
 ```
 pytorch == 1.5.0
-dgl-cuda10.2
+dgl-cu102
 rstudio
 ```
+MUST install dgl via: pip install dgl-cu102==0.4.3.post2
 Please download requirements.txt or environ_torch_dgl_r.yml.
 
 ## Directories Structure
