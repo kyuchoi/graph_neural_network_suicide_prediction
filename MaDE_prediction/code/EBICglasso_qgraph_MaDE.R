@@ -10,7 +10,7 @@ library(here)
 ### ref tutorial: http://sachaepskamp.com/files/Cookbook.html#network-estimation-binary-data
 
 current_path <- here()
-root_dir <- dirname(dirname(current_path)) # double dirname when you run in RStudio, but single dirname when you run with Rscript on command lines
+root_dir <- dirname(current_path) # double dirname when you run in RStudio, but single dirname when you run with Rscript on command lines
 # current_path <- getActiveDocumentContext()
 # root_dir <- dirname(dirname(current_path$path))
 raw_data_dir <- file.path(root_dir, 'raw_data') 
