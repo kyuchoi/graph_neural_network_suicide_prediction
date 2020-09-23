@@ -23,8 +23,7 @@ YAD_survey/MaDE_prediction/raw_data/raws_for_MaDE_pseudo/single_case_original.cs
 Please refer to ```YAD_survey/MaDE_prediction/raw_data/raws_for_MaDE_pseudo/single_case_original.csv```.
 
 ## Saliency result of representative case
-![Result](./ideation_prediction/result_thr6/single/average maps/Average question saliency for single case of suicidal_idea_within_2wk.png
-)
+![image](https://user-images.githubusercontent.com/21270193/94001349-58534380-fdd3-11ea-91d1-5f64a12a5cb5.png)
 
 ## Acute suicidal ideation (<2wks) prediction
 
