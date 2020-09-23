@@ -48,7 +48,7 @@ Please refer to ```YAD_survey/ideation_prediction/raw_data/data_for_smote/single
 Python3 (Anaconda) with following packages:
 ```
 pytorch >= 1.5.0
-cuda == 10.2
+cudatoolkit == 10.2
 dgl-cu102
 rstudio
 ```
