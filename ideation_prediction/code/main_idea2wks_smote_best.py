@@ -93,10 +93,6 @@ if not os.path.exists(args.ckpt_dir):
 args.result_dir = os.path.join(args.result_dir, args.sample_opt)
 result_dir = args.result_dir
 
-# log_dir = os.path.join(args.log_dir, args.save_model_metrics)
-# args.ckpt_dir = os.path.join(args.ckpt_dir, args.save_model_metrics)
-# result_dir = args.result_dir
-
 raw_data_dir = args.raw_data_dir
 args.data_dir = os.path.join(args.data_dir, f'{args.sample_opt}')
 
@@ -105,13 +101,6 @@ train_data_dir = os.path.join(args.data_dir, 'train')
 valid_data_dir = os.path.join(args.data_dir, 'valid')
 test_data_dir = os.path.join(args.data_dir, 'test')
 csv_dir = os.path.join(raw_data_dir, 'data_for_smote')
-
-# # set train_valid data directory    
-# if not os.path.exists(train_data_dir):    
-#     os.makedirs(train_data_dir)    
-    
-# if not os.path.exists(valid_data_dir):
-#     os.makedirs(valid_data_dir)  
 
 # you can just save constants without add_argument
 args.csv_dir = csv_dir
@@ -129,11 +118,6 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 torch.manual_seed(seed)
 np.random.seed(seed)
 torch.cuda.manual_seed_all(seed)
-
-# make a checkpoint directory
-# if os.path.exists(args.ckpt_dir):
-#     shutil.rmtree(args.ckpt_dir)
-# os.makedirs(args.ckpt_dir)
 
 # make a result directory
 if not os.path.exists(result_dir):
@@ -210,18 +194,6 @@ if args.new_subsample:
     elif args.sample_opt == 'u2':
         print(f'sampling using undersample with ratio of {args.balance_ratio//2}')
         X, y = under_sample(X, y, args.balance_ratio//2)
-        
-    ##### original code
-    # use_SMOTE = True # False
-    # if use_SMOTE:
-                
-    #     '''
-    #     split into single csv files AFTER sampling here: over, under, and SMOTE-NC sampling    
-    #     '''
-    #     print('sampling using SMOTE')
-    #     categorical_feature_num = np.array([0,1]+list(range(4, X.shape[1]-1))) # except ID in the last !!
-    #     smote_nc = SMOTENC(categorical_features=categorical_feature_num, random_state=args.seed, sampling_strategy=args.smote_ratio)
-    #     X, y = smote_nc.fit_resample(X, y)
     
     # split into train and valid dataset    
     X_train, X_valid, y_train, y_valid = train_test_split(X, y, test_size=args.split_ratio, random_state=args.seed, stratify=y)    
@@ -249,22 +221,6 @@ if args.new_subsample:
 else:
     print('data already exists!')
     
-    # # set test data directory
-    # test_data_dir = os.path.join(args.data_dir, 'test')
-    
-    # if os.path.exists(test_data_dir):
-    #     shutil.rmtree(test_data_dir)
-    # os.makedirs(test_data_dir)   
-    
-    # df_test = make_datasets(args, questions, single_items, label_lst, lst_test_filename).df_total_drop
-    # df_test = convert_total_quantile(df_test)
-    # df_test.to_csv(os.path.join(args.csv_dir, 'df_test.csv'), index=False)
-    
-    # if use_split_into_single_csv:
-    #     split_into_single_csv(df_test, test_data_dir)
-    # else:
-    #     print("not choose to split into single csv files")        
-
 #%%
 # set dataset and dataloader
 dataset = {}
