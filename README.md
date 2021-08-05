@@ -1,7 +1,5 @@
 # Deep graph neural network-based prediction of acute suicidal ideation in young adults
-Official repository for project YAD survey.
-
-_Reference: Choi et al., Deep graph neural network-based prediction of acute suicidal ideation in young adults
+Official repository for "Deep graph neural network-based prediction of acute suicidal ideation in young adults" (Choi et al., Sci Rep, 2021)
 https://www.nature.com/articles/s41598-021-95102-7_
 
 The developed GIN-based network, _'MindWatchNet'_ predicts the presence of acute suicidal ideation (<2wks) using multi-dimensional questionnaires.
