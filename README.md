@@ -1,7 +1,8 @@
 # YAD_survey
 Official repository for project YAD survey.
 
-_Reference: In preparation_
+_Reference: Choi et al., Deep graph neural network-based prediction of acute suicidal ideation in young adults
+https://www.nature.com/articles/s41598-021-95102-7_
 
 The developed GIN-based network, _'MindWatchNet'_ predicts the presence of acute suicidal ideation (<2wks) using multi-dimensional questionnaires.
 The _'MindWatchNet'_ is a two-staged model: first network is for MaDE prediction, making MaDE pseudolabel for acute suicidal ideation (<2wks) in the second network, using semi-supervised learning.
