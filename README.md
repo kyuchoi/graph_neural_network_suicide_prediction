@@ -1,4 +1,4 @@
-# YAD_survey
+# Deep graph neural network-based prediction of acute suicidal ideation in young adults
 Official repository for project YAD survey.
 
 _Reference: Choi et al., Deep graph neural network-based prediction of acute suicidal ideation in young adults
