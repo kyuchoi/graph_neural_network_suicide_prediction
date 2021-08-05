@@ -1,6 +1,6 @@
 # Deep graph neural network-based prediction of acute suicidal ideation in young adults
-Official repository for "Deep graph neural network-based prediction of acute suicidal ideation in young adults" (Choi et al., Sci Rep, 2021)
-https://www.nature.com/articles/s41598-021-95102-7_
+_Official repository for "Deep graph neural network-based prediction of acute suicidal ideation in young adults" (Choi et al., Sci Rep, 2021)_
+https://www.nature.com/articles/s41598-021-95102-7
 
 The developed GIN-based network, _'MindWatchNet'_ predicts the presence of acute suicidal ideation (<2wks) using multi-dimensional questionnaires.
 The _'MindWatchNet'_ is a two-staged model: first network is for MaDE prediction, making MaDE pseudolabel for acute suicidal ideation (<2wks) in the second network, using semi-supervised learning.
